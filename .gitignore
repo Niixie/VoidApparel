@@ -1,0 +1,7 @@
+node_modules
+*.txt
+readme.md
+tmp/
+doc/**/*.txt
+.idea
+.vscode 

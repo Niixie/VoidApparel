@@ -1,0 +1,96 @@
+// ==============================
+// NAVBAR STYLES
+// ==============================
+
+// Main navbar container
+.navbar {
+  background-color: $color-background;
+  font-family: $font-text;
+  box-shadow: 0 2px 8px rgba(102, 51, 153, 0.05);
+
+  .navbar-brand {
+    font-family: $font-title;
+    color: $color-highlight;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .nav-link {
+    color: $color-text;
+    font-family: $font-text;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.1rem;
+    transition: color 0.2s, background 0.2s, border 0.2s;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      color: $color-highlight;
+      background: rgba(102,51,153,0.08);
+      text-decoration: none;
+    }
+  }
+
+  // Dropdown styles
+  .dropdown-menu {
+    background-color: $color-background;
+    border: 1px solid $color-highlight;
+    min-width: 180px;
+    padding: 0.4rem 0;
+    box-shadow: 0 6px 24px rgba(102, 51, 153, 0.09);
+
+    .dropdown-item {
+      color: $color-text;
+      font-family: $font-text;
+      padding: 0.5rem 1.5rem;
+      transition: background 0.18s, color 0.18s;
+
+      &:hover,
+      &:focus {
+        color: $color-highlight;
+        background: rgba(102,51,153,0.13);
+      }
+    }
+  }
+
+  // Responsive toggler icon
+  .navbar-toggler {
+    border-color: $color-highlight;
+    background: transparent;
+
+    .navbar-toggler-icon {
+      background-image: none;
+      position: relative;
+      width: 1.7em;
+      height: 1.7em;
+
+      &::before,
+      &::after,
+      span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $color-highlight;
+        content: "";
+        border-radius: 2px;
+      }
+
+      &::before {
+        top: 0.3em;
+      }
+      &::after {
+        top: 1.1em;
+      }
+    }
+  }
+}

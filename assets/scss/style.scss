@@ -1,0 +1,9 @@
+// Custom variables
+@import "partials/custom-variables"; 
+
+
+// Import Bootstrap SCSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// import modified css
+@import "partials/navbar"
+

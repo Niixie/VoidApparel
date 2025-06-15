@@ -1,0 +1,24 @@
+// Typography
+$font-title: 'Orbitron', sans-serif;
+$font-text: 'Oxanium', sans-serif;
+
+// Colors
+$color-highlight: #663399; // Highlights (purple)
+$color-background: #07070A; // Background (dark)
+$color-text: #D8BDD8; // Main text (light purple)
+
+// override les couleurs de bootstrap
+$primary: $color-highlight;
+$body-bg: $color-background;
+$body-color: $color-text;
+
+body {
+  font-family: $font-text;
+  background-color: $color-background;
+  color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: $font-title;
+  color: $color-highlight;
+}
