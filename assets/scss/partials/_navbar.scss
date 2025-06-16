@@ -1,8 +1,4 @@
-// ==============================
-// NAVBAR STYLES
-// ==============================
-
-// Main navbar container
+// navbar
 .navbar {
   background-color: $color-background;
   font-family: $font-text;
@@ -39,7 +35,7 @@
     }
   }
 
-  // Dropdown styles
+  // Dropdown
   .dropdown-menu {
     background-color: $color-background;
     border: 1px solid $color-highlight;
@@ -61,7 +57,7 @@
     }
   }
 
-  // Responsive toggler icon
+  // Responsive
   .navbar-toggler {
     border-color: $color-highlight;
     background: transparent;

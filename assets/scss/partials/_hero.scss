@@ -1,9 +1,4 @@
-@import 'custom-variables';
-
-// ==============================
-// HERO SECTION WITH BACKGROUND IMAGE
-// ==============================
-
+// hero section
 .hero-section {
   min-height: 90vh;
   width: 100%;
@@ -76,8 +71,8 @@
   }
 }
 
-// Responsive adjustments (unchanged from before)
-@media (max-width: 991.98px) {
+// responsive
+@include media-breakpoint-up(lg) {
   .hero-section {
     min-height: 60vh;
     .hero-title {
@@ -88,7 +83,7 @@
     }
   }
 }
-@media (max-width: 575.98px) {
+@include media-breakpoint-up(sm) {
   .hero-section {
     padding: 3rem 0;
     .hero-title {
