@@ -28,7 +28,8 @@
   }
 }
 
-@media (max-width: 991.98px) {
+// responsive
+@include media-breakpoint-up(lg) {
   .home-about .about-img {
     margin-bottom: 2rem;
     min-height: 130px;

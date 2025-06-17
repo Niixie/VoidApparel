@@ -102,8 +102,8 @@
     }
   }
 }
-
-@media (max-width: 575.98px) {
+// responisve
+@include media-breakpoint-up(sm) {
   .section-title {
     font-size: 1.28rem;
   }
