@@ -1,0 +1,39 @@
+@import 'custom-variables';
+
+.home-about {
+  background: linear-gradient(120deg, rgba(102,51,153,0.07), rgba(7,7,10,0.99) 80%);
+  .section-title {
+    color: $color-highlight;
+    font-family: $font-title;
+    font-size: 2rem;
+  }
+  .about-lead {
+    font-family: $font-title;
+    font-size: 1.18rem;
+    color: $color-highlight;
+  }
+  .about-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: $font-text;
+    font-size: 1.05rem;
+    color: $color-text;
+    li {
+      margin-bottom: 0.6em;
+      i {
+        color: $color-highlight;
+        margin-right: 0.6em;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-about .about-img {
+    margin-bottom: 2rem;
+    min-height: 130px;
+  }
+  .home-about .section-title {
+    font-size: 1.33rem;
+  }
+}
