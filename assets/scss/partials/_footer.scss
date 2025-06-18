@@ -21,22 +21,6 @@
       text-decoration: none;
       display: inline-block;
       padding: 0.25rem 0;
-      position: relative;
-      transition: color 0.18s;
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0; right: 0; bottom: 0;
-        height: 2px;
-        background: $color-highlight;
-        transform: scaleX(0);
-        transition: transform 0.22s cubic-bezier(0.4,0,0.2,1);
-        border-radius: 1px;
-        opacity: 1;
-      }
-
       &:hover,
       &:focus {
         color: $color-highlight;
@@ -58,12 +42,12 @@
       }
     }
   }
-
-  .small {
-    font-size: 0.89rem;
-    opacity: 0.7;
-  }
 }
+.small .text-muted {
+  color: $color-text;
+  opacity: 0.7;
+}
+
 // responsive
 @include media-breakpoint-up(md) {
   .footer-section {

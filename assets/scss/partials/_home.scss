@@ -1,4 +1,6 @@
 // homepage
+@import 'custom-variables';
+
 // section
 .section-title {
   font-family: $font-title;
@@ -6,6 +8,36 @@
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
 }
+
+// BOUTA
+.home-about {
+  background: linear-gradient(120deg, rgba(102,51,153,0.07), rgba(7,7,10,0.99) 80%);
+  .section-title {
+    color: $color-highlight;
+    font-family: $font-title;
+    font-size: 2rem;
+  }
+  .about-lead {
+    font-family: $font-title;
+    font-size: 1.18rem;
+    color: $color-highlight;
+  }
+  .about-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: $font-text;
+    font-size: 1.05rem;
+    color: $color-text;
+    li {
+      margin-bottom: 0.6em;
+      i {
+        color: $color-highlight;
+        margin-right: 0.6em;
+      }
+    }
+  }
+}
+
 
 // all prducts
   .product-card {
@@ -78,6 +110,53 @@
   position: relative;
 }
 
+// testimonials
+.home-testimonials {
+  background: linear-gradient(120deg, rgba(102,51,153,0.07), rgba(7,7,10,0.98) 80%);
+  .section-title {
+    color: $color-highlight;
+    font-family: $font-title;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .testimonial-card {
+    background: $color-background;
+    border-radius: 1.3rem;
+    box-shadow: 0 2px 24px rgba(102, 51, 153, 0.07);
+    border: 1.5px solid rgba($color-highlight, 0.11);
+    transition: box-shadow 0.18s, border-color 0.18s;
+    &:hover {
+      box-shadow: 0 6px 32px rgba(102, 51, 153, 0.15);
+      border-color: $color-highlight;
+    }
+  }
+  .testimonial-quote {
+    font-size: 2rem;
+    color: $color-highlight;
+  }
+  .testimonial-text {
+    font-size: 1.08rem;
+    font-family: $font-text;
+    color: $color-text;
+    min-height: 90px;
+  }
+  .testimonial-user {
+    .testimonial-avatar {
+      border: 2px solid $color-highlight;
+      background: #181825;
+      object-fit: cover;
+    }
+    .testimonial-name {
+      font-family: $font-title;
+      font-weight: 600;
+      color: $color-highlight;
+    }
+    .testimonial-meta {
+      color: $color-text;
+      opacity: 0.7;
+    }
+  }
+}
 
 // newsletter
 .home-newsletter {
@@ -101,7 +180,13 @@
         border-color: lighten($color-highlight, 10%);
       }
     }
+    .form-control::placeholder {
+      color: $color-text;
+    }
     .btn-void {
+      color: $color-text;
+      background: transparent;
+      outline: 1px solid $color-highlight;
       border-radius: 25px;
       padding: 0.5em 2.3em;
     }
@@ -127,5 +212,22 @@
   .product-card .product-img {
     max-width: 110px;
     min-height: 88px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .home-testimonials .testimonial-card {
+    margin-bottom: 1.5rem;
+  }
+  .home-testimonials .section-title {
+    font-size: 1.3rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .home-about .about-img {
+    margin-bottom: 2rem;
+    min-height: 130px;
+  }
+  .home-about .section-title {
+    font-size: 1.33rem;
   }
 }
