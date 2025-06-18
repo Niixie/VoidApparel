@@ -1,3 +1,5 @@
+// homepage
+// section
 .section-title {
   font-family: $font-title;
   color: $color-highlight;
@@ -5,28 +7,34 @@
   margin-bottom: 1.5rem;
 }
 
-.product-card {
+// all prducts
+  .product-card {
   background: rgba(7,7,10,0.97);
   border-radius: 1.1rem;
-  box-shadow: 0 2px 24px rgba(102, 51, 153, 0.09);
+  box-shadow: 0 2px 18px rgba(102, 51, 153, 0.10);
   padding: 1.2rem;
   text-align: center;
   transition: transform 0.18s, box-shadow 0.18s;
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     transform: translateY(-6px) scale(1.025);
-    box-shadow: 0 6px 32px rgba(102, 51, 153, 0.18);
+    box-shadow: 0 6px 32px rgba(102, 51, 153, 0.19);
   }
 
   .product-img {
     width: 100%;
     max-width: 170px;
+    min-height: 160px;
     margin: 0 auto 1rem auto;
     border-radius: 0.8rem;
     background: #07070A;
     object-fit: cover;
-    min-height: 160px;
+    display: block;
   }
 
   .product-info {
@@ -41,29 +49,37 @@
       font-size: 1.08rem;
       font-family: $font-text;
       font-weight: 700;
+      display: block;
     }
-  }
-
-  &.bestseller {
-    border: 2px solid $color-highlight;
-    position: relative;
-    &::before {
-      content: "Bestseller";
-      position: absolute;
-      top: 1rem; left: 1rem;
-      background: $color-highlight;
-      color: $color-background;
+    .btn-view-outline {
+      border: 2px solid $color-highlight;
+      background: transparent;
+      color: $color-highlight;
       font-family: $font-title;
-      font-size: 0.87rem;
-      padding: 0.13em 0.6em;
-      border-radius: 1em;
-      letter-spacing: 1.5px;
-      font-weight: 700;
-      z-index: 2;
+      border-radius: 30px;
+      box-shadow: none;
+      padding: 0.35em 1.6em;
+      font-size: 1rem;
+      &:hover, &:focus {
+        background: $color-highlight;
+        color: $color-background;
+        box-shadow: 0 2px 16px rgba(102, 51, 153, 0.10);
+        text-decoration: none;
+      }
     }
   }
 }
 
+// best sellers
+.bestseller {
+  outline: 3px solid $color-highlight;
+  outline-offset: -6px;
+  border-radius: 1.1rem;
+  position: relative;
+}
+
+
+// newsletter
 .home-newsletter {
   background: linear-gradient(120deg, rgba(102,51,153,0.12), rgba(7,7,10,0.97) 90%);
   .newsletter-box {
@@ -102,6 +118,7 @@
     }
   }
 }
+
 // responisve
 @include media-breakpoint-up(sm) {
   .section-title {

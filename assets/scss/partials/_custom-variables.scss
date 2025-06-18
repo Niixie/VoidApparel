@@ -3,14 +3,9 @@ $font-title: 'Orbitron', sans-serif;
 $font-text: 'Oxanium', sans-serif;
 
 // Colors
-$color-highlight: #663399; // Highlights (purple)
+$color-highlight: #663399; // Highlights and title(purple)
 $color-background: #07070A; // Background (dark)
 $color-text: #D8BDD8; // Main text (light purple)
-
-// override les couleurs de bootstrap
-$primary: $color-highlight;
-$body-bg: $color-background;
-$body-color: $color-text;
 
 body {
   font-family: $font-text;
