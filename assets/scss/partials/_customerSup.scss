@@ -1,0 +1,44 @@
+// custommre support
+.customer-support {
+  background: linear-gradient(120deg, rgba(102,51,153,0.06), rgba(7,7,10,0.97) 90%);
+  .section-title {
+    color: $color-highlight;
+    font-family: $font-title;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .support-card {
+    background: $color-background;
+    border-radius: 1.3rem;
+    box-shadow: 0 2px 20px rgba(102, 51, 153, 0.07);
+    border: 2px solid rgba($color-highlight, 0.12);
+    text-align: center;
+    .support-icon {
+      font-size: 2rem;
+      color: $color-highlight;
+    }
+    .support-title {
+      font-family: $font-title;
+      color: $color-highlight;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .support-text {
+      font-size: 1rem;
+      color: $color-text;
+      a {
+        color: $color-highlight;
+        text-decoration: underline;
+        &:hover {
+          color: lighten($color-highlight, 10%);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .customer-support .section-title {
+    font-size: 1.3rem;
+  }
+}

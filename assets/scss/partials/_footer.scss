@@ -8,7 +8,7 @@
   .footer-title {
     font-family: $font-title;
     color: $color-highlight;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -34,7 +34,7 @@
   .footer-social {
     .footer-social-link {
       color: $color-highlight;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       transition: color 0.2s;
       &:hover, &:focus {
         color: lighten($color-highlight, 10%);
