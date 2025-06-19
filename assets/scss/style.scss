@@ -1,13 +1,13 @@
 // Custom variables
-@import 'partials/custom-variables';
-
+@import "partials/custom-variables";
 
 // Import Bootstrap SCSS
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // import modified css
 @import "partials/navbar";
-@import "partials/hero";
+// @import "partials/hero";
 @import "partials/footer";
 @import "partials/home";
 @import "partials/shop";
 @import "partials/customerSup";
+@import "partials/productView";

@@ -1,0 +1,34 @@
+// product view
+.product-title {
+  font-family: $font-title;
+  color: $color-highlight;
+  font-size: 2.1rem;
+  margin-bottom: 0.4rem;
+}
+.product-price {
+  color: $color-highlight;
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 1.55rem;
+}
+.product-shortdesc {
+  color: $color-text;
+  font-size: 1.1rem;
+  font-family: $font-text;
+}
+.product-form {
+  .form-label {
+    font-family: $font-title;
+    color: $color-highlight;
+    margin-bottom: 0.25rem;
+  }
+  .form-select,
+  .form-control {
+    border-radius: 22px;
+    border: 1.5px solid $color-highlight;
+    background: $color-background;
+    color: $color-text;
+    font-family: $font-text;
+    font-size: 1rem;
+  }
+}

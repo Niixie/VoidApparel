@@ -1,19 +1,42 @@
 // Typography
-$font-title: 'Orbitron', sans-serif;
-$font-text: 'Oxanium', sans-serif;
+$font-title: "Orbitron", sans-serif;
+$font-text: "Oxanium", sans-serif;
 
 // Colors
 $color-highlight: #663399; // Highlights and title(purple)
-$color-background: #07070A; // Background (dark)
-$color-text: #D8BDD8; // Main text (light purple)
+$color-background: #07070a; // Background (dark)
+$color-text: #d8bdd8; // Main text (light purple)
 
 body {
   font-family: $font-text;
   background-color: $color-background;
   color: $color-text;
 }
+.btn-outline-void {
+  border: 2px solid $color-highlight;
+  background: transparent;
+  color: $color-highlight;
+  font-family: $font-title;
+  border-radius: 30px;
+  box-shadow: none;
+  padding: 0.35em 1.6em;
+  font-size: 1rem;
+  &:hover,
+  &:focus {
+    background: $color-highlight;
+    color: $color-background;
+    box-shadow: 0 2px 16px rgba(102, 51, 153, 0.1);
+    text-decoration: none;
+  }
+}
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
   font-family: $font-title;
   color: $color-highlight;
 }

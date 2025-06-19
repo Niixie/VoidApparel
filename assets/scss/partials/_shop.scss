@@ -1,21 +1,21 @@
 // shop
 // Pagination
 .pagination {
-    .page-item {
-      .page-link {
-        border-radius: 2rem;
-        color: $color-highlight;
-        border: 1.5px solid $color-highlight;
-        background: transparent;
-        margin: 0 0.15rem;
-        font-weight: 600;
-        transition: background 0.17s, color 0.17s, border 0.17s;
-        &:hover, &:focus {
-          background: $color-highlight;
-          color: $color-background;
-          border-color: $color-highlight;
-        }
+  .page-item {
+    .page-link {
+      border-radius: 2rem;
+      color: $color-highlight;
+      border: 1.5px solid $color-highlight;
+      background: transparent;
+      margin: 0 0.15rem;
+      font-weight: 600;
+      transition: background 0.17s, color 0.17s, border 0.17s;
+      &:hover,
+      &:focus {
+        background: $color-highlight;
+        color: $color-background;
+        border-color: $color-highlight;
       }
     }
   }
-
+}

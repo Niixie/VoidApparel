@@ -8,6 +8,67 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+// hero section
+.hero-section {
+  min-height: 90vh;
+  width: 100%;
+  background: 
+    linear-gradient(120deg, rgba(7, 7, 10, 0.600) 60%, rgba(102,51,153,0.650) 100%),
+    url('../img/content-img/banner.png') center center/cover no-repeat;
+  color: $color-text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  .hero-title {
+    font-family: $font-title;
+    font-size: 2.6rem;
+    color: $color-text;
+
+    .brand-name {
+      color: $color-highlight;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .hero-text {
+    font-family: $font-text;
+    font-size: 1.25rem;
+    color: $color-text;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btn-group {
+    .btn {
+      font-family: $font-title;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: all 0.20s;
+    }
+    .btn-void {
+      background: $color-highlight;
+      color: $color-background;
+      border: none;
+
+      &:hover, &:focus {
+        background: lighten($color-highlight, 10%);
+        color: $color-background;
+        box-shadow: 0 2px 18px rgba(102, 51, 153, 0.12);
+        text-decoration: none;
+      }
+    }
+
+  }
+}
 
 // BOUTA
 .home-about {
@@ -83,22 +144,7 @@
       font-weight: 700;
       display: block;
     }
-    .btn-view-outline {
-      border: 2px solid $color-highlight;
-      background: transparent;
-      color: $color-highlight;
-      font-family: $font-title;
-      border-radius: 30px;
-      box-shadow: none;
-      padding: 0.35em 1.6em;
-      font-size: 1rem;
-      &:hover, &:focus {
-        background: $color-highlight;
-        color: $color-background;
-        box-shadow: 0 2px 16px rgba(102, 51, 153, 0.10);
-        text-decoration: none;
-      }
-    }
+
   }
 }
 
@@ -209,10 +255,17 @@
   .section-title {
     font-size: 1.28rem;
   }
+    .hero-section {
+    padding: 3rem 0;
+    .hero-title {
+      font-size: 1.25rem;
+    }
+  }
   .product-card .product-img {
     max-width: 110px;
     min-height: 88px;
   }
+
 }
 @include media-breakpoint-up(md) {
   .home-testimonials .testimonial-card {
@@ -229,5 +282,14 @@
   }
   .home-about .section-title {
     font-size: 1.33rem;
+  }
+    .hero-section {
+    min-height: 60vh;
+    .hero-title {
+      font-size: 2rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
   }
 }
