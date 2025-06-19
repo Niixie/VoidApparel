@@ -1,0 +1,75 @@
+// contact us
+.contact-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.contact-card {
+  background: linear-gradient(120deg, rgba(102, 51, 153, 0.13), #181825 90%);
+  border: 1.7px solid $color-highlight;
+  border-radius: 1.6rem;
+  box-shadow: 0 2px 22px rgba(102, 51, 153, 0.13);
+  .section-title {
+    color: $color-highlight;
+    font-family: $font-title;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .contact-form {
+    .form-label {
+      font-family: $font-title;
+      color: $color-highlight;
+      font-size: 1.01rem;
+    }
+    .form-control {
+      border-radius: 25px;
+      border: 1.5px solid $color-highlight;
+      color: $color-text;
+      background: #181825;
+      min-width: 0;
+      font-family: $font-text;
+      font-size: 1rem;
+      &:focus {
+        border-color: lighten($color-highlight, 10%);
+        box-shadow: 0 0 0 2px rgba($color-highlight, 0.2);
+      }
+    }
+  }
+}
+
+.text-highlight {
+  color: $color-highlight;
+  font-family: $font-title;
+}
+
+.contact-info-box {
+  background: rgba(24, 24, 37, 0.95);
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(102, 51, 153, 0.06);
+  padding: 1.7rem 1.2rem;
+  i {
+    color: $color-highlight;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+}
+
+// responsive
+@include media-breakpoint-up(lg) {
+  .contact-card .section-title {
+    font-size: 1.3rem;
+  }
+  .contact-info-box {
+    padding: 1.1rem 0.5rem;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .contact-section {
+    padding-bottom: 1rem;
+  }
+  .contact-card {
+    padding: 1.2rem 0.5rem !important;
+  }
+}

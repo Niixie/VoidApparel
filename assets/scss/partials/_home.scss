@@ -1,5 +1,5 @@
 // homepage
-@import 'custom-variables';
+@import 'custom-variables'; // doesnt work if i remove it ?
 
 // section
 .section-title {
@@ -8,6 +8,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+
 // hero section
 .hero-section {
   min-height: 90vh;
@@ -52,25 +53,11 @@
       font-family: $font-title;
       font-size: 1rem;
       border-radius: 30px;
-      transition: all 0.20s;
     }
-    .btn-void {
-      background: $color-highlight;
-      color: $color-background;
-      border: none;
-
-      &:hover, &:focus {
-        background: lighten($color-highlight, 10%);
-        color: $color-background;
-        box-shadow: 0 2px 18px rgba(102, 51, 153, 0.12);
-        text-decoration: none;
-      }
-    }
-
   }
 }
 
-// BOUTA
+// abouts
 .home-about {
   background: linear-gradient(120deg, rgba(102,51,153,0.07), rgba(7,7,10,0.99) 80%);
   .section-title {
@@ -102,7 +89,7 @@
 
 // all prducts
   .product-card {
-  background: rgba(7,7,10,0.97);
+  background: $color-background;
   border-radius: 1.1rem;
   box-shadow: 0 2px 18px rgba(102, 51, 153, 0.10);
   padding: 1.2rem;
@@ -125,7 +112,7 @@
     min-height: 160px;
     margin: 0 auto 1rem auto;
     border-radius: 0.8rem;
-    background: #07070A;
+    background: $color-background;
     object-fit: cover;
     display: block;
   }
@@ -151,7 +138,6 @@
 // best sellers
 .bestseller {
   outline: 3px solid $color-highlight;
-  outline-offset: -6px;
   border-radius: 1.1rem;
   position: relative;
 }
@@ -189,7 +175,7 @@
   .testimonial-user {
     .testimonial-avatar {
       border: 2px solid $color-highlight;
-      background: #181825;
+      background: $color-background;
       object-fit: cover;
     }
     .testimonial-name {
@@ -219,7 +205,7 @@
       font-family: $font-text;
       border: 1.5px solid $color-highlight;
       color: $color-text;
-      background: #181825;
+      background: $color-background;
       min-width: 0;
       outline: none;
       &:focus {
@@ -229,20 +215,12 @@
     .form-control::placeholder {
       color: $color-text;
     }
-    .btn-void {
-      color: $color-text;
-      background: transparent;
-      outline: 1px solid $color-highlight;
-      border-radius: 25px;
-      padding: 0.5em 2.3em;
-    }
 
   }
   .newsletter-privacy {
-    font-size: 0.93rem;
     a {
       color: $color-highlight;
-      text-decoration: underline;
+      text-decoration: none;
       &:hover {
         color: lighten($color-highlight, 10%);
       }

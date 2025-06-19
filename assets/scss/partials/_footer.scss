@@ -24,9 +24,6 @@
       &:hover,
       &:focus {
         color: $color-highlight;
-        &::after {
-          transform: scaleX(1);
-        }
       }
     }
   }

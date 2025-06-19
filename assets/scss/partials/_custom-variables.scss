@@ -29,6 +29,19 @@ body {
     text-decoration: none;
   }
 }
+.btn-void {
+  background: $color-highlight;
+  color: $color-background;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: lighten($color-highlight, 10%);
+    color: $color-background;
+    box-shadow: 0 2px 18px rgba(102, 51, 153, 0.12);
+    text-decoration: none;
+  }
+}
 
 h1,
 h2,
