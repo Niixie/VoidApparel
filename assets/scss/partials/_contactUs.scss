@@ -23,7 +23,7 @@
       color: $color-highlight;
       font-size: 1.01rem;
     }
-    .form-control {
+    .form-control{
       border-radius: 25px;
       border: 1.5px solid $color-highlight;
       color: $color-text;
@@ -36,7 +36,27 @@
         box-shadow: 0 0 0 2px rgba($color-highlight, 0.2);
       }
     }
+      .form-select{
+      border-radius: 25px;
+      border: 1.5px solid $color-highlight;
+      color: $color-text;
+      background: #181825;
+      min-width: 0;
+      font-family: $font-text;
+      font-size: 1rem;
+      opacity: 0.8;
+      &:focus {
+        border-color: lighten($color-highlight, 10%);
+        box-shadow: 0 0 0 2px rgba($color-highlight, 0.2);
+      }
+    }
   }
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: $color-text;
+  font-family: $font-text;
+  opacity: 0.8;
+}
 }
 
 .text-highlight {

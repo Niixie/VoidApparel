@@ -113,6 +113,7 @@
                     type="text"
                     id="contact-name"
                     class="form-control"
+                    placeholder="Your name..."
                     required
                   />
                 </div>
@@ -122,20 +123,22 @@
                     type="email"
                     id="contact-email"
                     class="form-control"
+                    placeholder="email@exemple.com"
                     required
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="contact-subject" class="form-label"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    id="contact-subject"
-                    class="form-control"
-                    required
-                  />
-                </div>
+              <div class="mb-3">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <select id="contact-subject" class="form-select" required>
+                  <option value="">Choose a subject...</option>
+                  <option>Order Inquiry</option>
+                  <option>Shipping & Delivery</option>
+                  <option>Returns & Exchanges</option>
+                  <option>Product Information</option>
+                  <option>Feedback / Suggestions</option>
+                  <option>Other</option>
+                </select>
+              </div>
                 <div class="mb-3">
                   <label for="contact-message" class="form-label"
                     >Message</label
@@ -144,6 +147,7 @@
                     id="contact-message"
                     class="form-control"
                     rows="4"
+                    placeholder="enter your message here"
                     required
                   ></textarea>
                 </div>
